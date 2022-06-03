@@ -1,0 +1,51 @@
+.services{
+    background-color: $--color-primary;
+
+    .card{
+        background-color: transparent;
+        min-height: 200px;
+    }
+
+    .card-body{
+        background-color: rgba($color: $--color-primary, $alpha: 0.5);
+        position: relative;
+        z-index: 2;
+        border-radius: 15px;
+    }
+
+    h5{
+        color: #fff;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    p{
+        color: $--color-grey;
+    }
+
+    button{
+        width: fit-content;
+        background-color: $--color-secondary;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -19px;
+        margin: auto;
+        border: none;
+    }
+
+    .card-image{
+        width: fit-content;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -35px;
+        z-index: 1;
+        margin: auto;
+
+        i{
+            font-size: 70px;
+            color: $--color-secondary;
+        }
+    }
+}

@@ -1,0 +1,120 @@
+header{
+    background-image: url('../images/header-bg.png');
+    background-size: contain;
+    min-height: 820px;
+}
+
+.search-btn{
+    background-color: $--color-primary;
+    padding: 30px;
+    color: white;
+    font-size: 20px;
+}
+
+.top-bar{
+    
+    background-image: url('../images/curbe-line.png');
+    background-size: contain;
+
+    .navbar-h{
+        max-height: 82px;
+    }
+    .lnavbar-brand{
+        img{
+            position: relative;
+            z-index: 1;
+        }
+    }
+}
+
+.carousel{
+    max-width: 860px;
+    height: 420px;
+    margin: 150px auto 100px;
+    background-color: white;
+
+    .carousel-item{
+        height: 100%;        
+        padding: 30px;
+        background-image: url('../images/floare.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .banner-content{
+        max-width: 400px;
+
+        h2{
+            color: $--color-secondary;
+            border-bottom: 3px solid $--color-secondary;
+        }  
+    }
+    
+    .carousel-control-next{
+        right: -50px;
+        width: 50px;
+        border-bottom-right-radius: 100px;
+        border-top-right-radius: 100px;
+        background-color: #fff;
+        height: 100px;
+        margin: auto;
+
+        i{
+            color: $--color-primary;
+            margin-right: 10px;
+        }
+    }
+
+    .carousel-control-prev{
+        left: -50px;
+        width: 50px;
+        border-bottom-left-radius: 100px;
+        border-top-left-radius: 100px;
+        background-color: #fff;
+        height: 100px;
+        margin: auto;
+        
+        i{
+            color: $--color-primary;
+            margin-left: 10px;
+        }
+    }
+
+    .carousel-indicators{
+        bottom: -70px;
+
+        button{
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 5px;
+            border: none;
+            background-color: #fff;
+
+            &.active{
+                background-color: $--color-secondary;
+            }
+        }
+    }
+}
+
+.banner {
+    padding-bottom: 30px;
+
+    p{
+    max-width: 860px;
+    padding: 30px auto;
+    }
+}
+
+@media only screen and (min-width: 448px){
+    .carousel{
+        .carousel-control-prev,
+        .carousel-control-next{
+            display: flex;
+        }
+    }
+}

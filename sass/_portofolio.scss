@@ -1,0 +1,105 @@
+.portfolio{
+
+    .card{
+        border-radius: 0;
+        margin-bottom: 50px;
+
+        &:hover{
+            .wrapper{
+                display: flex;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .card-image{
+        position: relative;
+    }
+
+    .wrapper{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($color: $--color-primary, $alpha: 0.8);
+        z-index: 1;
+
+        i{
+            color: #fff;
+            background-color: $--color-secondary;
+            padding: 20px;
+            border-radius: 50%;
+            font-size: 30px;
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+    }
+
+    .portofolio-column{
+        padding: 0  25px;
+        height: auto;
+    }
+    
+    .card-body{
+        background-color: $--color-primary;
+    }
+    .card-body-title{
+        h3{
+            color: $--color-secondary;
+            font-size: 16px;
+        }
+
+        p{
+            color: $--color-grey;
+            font-size: 14px; 
+            margin: 0;
+            line-height: 1px;
+        }
+    }
+
+    .likes{
+        display: flex;
+        align-items: flex-end;
+
+        span{
+            color: $--color-grey;
+            font-size: 14px;
+            line-height: 1px;
+            margin-left: 3px;
+        }
+
+        i{
+            color: $--color-secondary;
+            font-size: 14px;
+            line-height: 1px;
+        }
+    }
+
+    .slick-dots{
+        li{
+            margin: 0 10px;
+        }
+        button{
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 5px;
+            border: none;
+            background-color: #fff;
+            box-shadow: 0 0 10px black;
+
+            &::before{
+                content: none;
+            }
+        }
+
+        .slick-active button{
+            background-color: $--color-secondary;
+        }
+    }
+}

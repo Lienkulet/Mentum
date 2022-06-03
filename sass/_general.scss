@@ -1,0 +1,32 @@
+section{
+    padding: 60px 0;
+}
+
+.btn-primary{
+    background-color: $--color-primary;
+}
+
+.btn-secondary{
+    background-color: $--color-secondary;
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+    h2{
+        font-size: 25px;
+        color: $--color-grey;
+        margin: 0 30px;
+        white-space: nowrap;
+    }
+
+    .line{
+        width: 100%;
+        border-top: 2px solid #e8eaeb;
+        border-bottom: 2px solid #d1d5d8;
+    }
+
+    
+}

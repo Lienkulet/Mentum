@@ -1,0 +1,140 @@
+.about-us{
+    position: relative;
+    background-color: #ededed;
+
+    .card{
+        margin-bottom: 50px;
+    }
+    
+    .btn{
+        width: fit-content;
+        background-color: $--color-secondary;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -19px;
+        margin: auto;
+        border: none;
+    }
+
+    .subheading{
+        p{
+        text-align: center;
+        color: $--color-grey;
+        margin-bottom: 30px;
+        }
+    }
+
+    .description{
+        max-width: 800px;
+        margin: auto;
+
+        p{
+            color: $--color-secondary;
+            text-align: center;
+            position: relative;
+            padding: 20px;
+
+            &::before{
+                content: ' ';
+                width: 100%;
+                border-top: 3px solid #e8eaeb;
+                border-bottom: 3px solid #d1d5d8;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+            }
+
+            &::after{
+                content: ' ';
+                width: 100%;
+                position: absolute;
+                border-top: 3px solid #e8eaeb;
+                border-bottom: 3px solid #d1d5d8;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+        }
+
+        
+    }
+
+    .about-us-block h2{
+        color: $--color-grey;
+        position: relative;
+        padding-bottom: 30px;
+
+        &::before{
+            content: ' ';
+            background-color: #484844;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            width: 100%;
+            z-index: 1;
+        }
+
+        &::after{
+            content: ' ';
+            background-color: $--color-secondary;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            width: 30%;
+            z-index: 2;
+        }
+    }
+
+        .progress{
+            height: 35px;
+            margin-bottom: 10px;
+            background-color: $--color-primary;
+            border-radius: unset;
+
+            .progress-bar{
+                background-color: $--color-secondary;
+                text-align: start;
+                padding-left: 30px;
+            }
+    }    
+}
+
+.clients{
+    background-color: $--color-grey;
+
+    .carousel{
+        margin-top: 0;
+        height: auto;
+        width: fit-content;
+        background-color: transparent;
+    }
+
+   
+    .carousel-item{
+        padding: 0;
+        background-image: none;
+        height: auto;
+
+        p{
+            color: #fff;
+        }
+
+        img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: auto;
+            border: 5px solid #fff;
+        }
+    }
+
+    
+}
+
